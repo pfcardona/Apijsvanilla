@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
+   
   },
   "keywords": [
     "javascript"

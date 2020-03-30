@@ -1,4 +1,3 @@
-// const API = 'https://rickandmortyapi.com/api/character/';
 const API = 'https://raw.githubusercontent.com/msoler18/Gradi-Gallery/master/api/gradiAuthors.json';
 
 const getData = async (id) => {
