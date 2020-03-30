@@ -14,13 +14,25 @@ module.exports = {
     },
     module: {
         rules: [
+            // aqui van los loaders
             {
+                // test:tipo de archivo que quiero reconocer
+                // use: Que loader se va a encargar del archivo
                 test: /\.js?$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
                 }
-            }
+            },
+            {
+                test: /\.(png|gif|jpg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: { name: 'assets/[hash].[ext]' },
+                    }
+                ],
+            },
         ]
     },
     plugins: [
