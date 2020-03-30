@@ -25,14 +25,14 @@ module.exports = {
                 }
             },
             {
-                test: /\.(jpg|png|gif)$/,
-                use: {
-                    loader: 'url-loader',
-                    options: {
-                        limit:100000,
+                test: /\.(png|gif|jpg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: { name: 'assets/[hash].[ext]' },
                     }
-                }
-            }
+                ],
+            },
         ]
     },
     plugins: [

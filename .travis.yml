@@ -1,9 +1,14 @@
+# construir este script que nos va a permitir enviar a produccion nuestro 
+# proyecto
+
 language: node_js
 cache:
   directories:
     - ~/.npm
 node_js:
   - '12'
+# va a profundizar hasta el 3ter nivel es decir
+# va a leer nuestro repositorio, y como esta constituido nuestro proyecyto
 git:
   depth: 3
 script:
